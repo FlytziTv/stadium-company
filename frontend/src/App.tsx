@@ -8,22 +8,29 @@ import Boutique from "./pages/Boutique";
 import About from "./pages/About";
 import Connect from "./pages/Connect";
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/evenements" element={<Evenements />} />
-        <Route path="/billetterie" element={<Billetterie />} />
-        <Route path="/restauration" element={<Restauration />} />
-        <Route path="/boutique" element={<Boutique />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/connect" element={<Connect />} />
-      </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/evenements" element={<Evenements />} />
+            <Route path="/billetterie" element={<Billetterie />} />
+            <Route path="/restauration" element={<Restauration />} />
+            <Route path="/boutique" element={<Boutique />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/connect" element={<Connect />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
