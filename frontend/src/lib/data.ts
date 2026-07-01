@@ -3,6 +3,7 @@ import type { EventsCardProps } from "../components/card/EventsCard";
 import type { ServicesCardProps } from "../components/card/ServicesCard";
 import type { ActualitésCardProps } from "../components/card/ActualitésCard";
 import type { ProduitCardProps } from "../components/card/ProduitCard";
+import type { SiteCardProps } from "../components/card/SiteCard";
 
 export const stats = [
   { value: "45 000", label: "Places" },
@@ -178,4 +179,31 @@ export const produits: ProduitCardProps[] = [
     stock: 60,
     imageSrc: "https://m.media-amazon.com/images/I/41xGWOUzLXL.jpg",
   },
+];
+
+export const sites: SiteCardProps[] = [
+  {
+    name: "Stade (Siège)",
+    address: "1 Avenue du Stade, 75001 Paris",
+    phone: "+33 1 23 45 67 89",
+    type: "Principal",
+  },
+  {
+    name: "Billetterie",
+    address: "12 Rue de la République, 75002 Paris",
+    phone: "+33 1 23 45 67 90",
+    type: "Centre-ville",
+  },
+  {
+    name: "Boutique Souvenirs",
+    address: "5 Place du Commerce, 75003 Paris",
+    phone: "+33 1 23 45 67 91",
+    type: "Point de vente",
+  },
+];
+
+export const horaires = [
+  { day: "Lun – Ven", hours: "9h – 18h" },
+  { day: "Samedi", hours: "10h – 16h" },
+  { day: "Jours d'événement", hours: "Selon programme" },
 ];
