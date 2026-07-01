@@ -2,6 +2,7 @@ import { ShoppingBag, Star, Ticket, Utensils } from "lucide-react";
 import type { EventsCardProps } from "../components/card/EventsCard";
 import type { ServicesCardProps } from "../components/card/ServicesCard";
 import type { ActualitésCardProps } from "../components/card/ActualitésCard";
+import type { ProduitCardProps } from "../components/card/ProduitCard";
 
 export const stats = [
   { value: "45 000", label: "Places" },
@@ -126,5 +127,55 @@ export const actualites: ActualitésCardProps[] = [
     tag: "Événement",
     title: "Record de billetterie pour le concert de l'été",
     excerpt: "45 000 places écoulées en moins de 48h pour Coldplay World Tour.",
+  },
+];
+
+export const produits: ProduitCardProps[] = [
+  {
+    name: "Maillot Domicile 2024/25",
+    price: 89,
+    category: "Maillots",
+    stock: 150,
+    imageSrc:
+      "https://images.footballfanatics.com/france-national-team/france-nike-home-stadium-shirt-2026_ss5_p-203721238+pv-1+u-lk9ttwlnrqxhnc5cg0eq+v-q0gjq4agj6zbg18hcg9k.jpg?_hv=2&w=1018",
+  },
+  {
+    name: "Écharpe FC Stadium",
+    price: 24,
+    category: "Accessoires",
+    stock: 320,
+    imageSrc:
+      "https://m.media-amazon.com/images/I/81obnjscqKL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    name: "Casquette Officielle",
+    price: 32,
+    category: "Accessoires",
+    stock: 200,
+    imageSrc:
+      "https://contents.mediadecathlon.com/m15729454/k$34451104ff2fefb7d2b5a44f0ed08c37/picture.jpg",
+  },
+  {
+    name: "Maillot Extérieur 2024/25",
+    price: 89,
+    category: "Maillots",
+    stock: 98,
+    imageSrc:
+      "https://media.intersport.fr/is/image/intersportfr/IB5367_6YA_Q1?$product_grey$&layer=comp&fit=constrain,0&$produit_xl$&fmt=webp",
+  },
+  {
+    name: "Tasse & Assiette Club",
+    price: 28,
+    category: "Maison",
+    stock: 75,
+    imageSrc:
+      "https://images.footballfanatics.com/france-national-team/france-mug-and-bowl-set-with-gift-box_ss5_p-201179423+pv-2+u-d1vlrxpf1qlmzm5sy0zj+v-vdytglnlwpp0vtdereuf.jpg?_hv=2&w=1018",
+  },
+  {
+    name: "Kit Supporter Junior",
+    price: 55,
+    category: "Enfants",
+    stock: 60,
+    imageSrc: "https://m.media-amazon.com/images/I/41xGWOUzLXL.jpg",
   },
 ];
