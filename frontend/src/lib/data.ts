@@ -15,6 +15,7 @@ import type { ServicesCardProps } from "../components/card/ServicesCard";
 import type { ActualitésCardProps } from "../components/card/ActualitésCard";
 import type { ProduitCardProps } from "../components/card/ProduitCard";
 import type { SiteCardProps } from "../components/card/SiteCard";
+import type { MenuCardProps } from "../components/card/MenuCard";
 
 export const stats = [
   { value: "45 000", label: "Places" },
@@ -275,5 +276,44 @@ export const ValeursAbout = [
     icon: Camera,
     title: "Innovation",
     desc: "Nous investissons dans les technologies pour moderniser votre expérience.",
+  },
+];
+
+export const MenusRestauration: MenuCardProps[] = [
+  {
+    name: "Menu Découverte",
+    price: "65€",
+    items: [
+      "Amuse-bouches du chef",
+      "Velouté de légumes de saison",
+      "Dos de cabillaud, beurre citronné",
+      "Tarte au citron meringuée",
+    ],
+    tag: "",
+  },
+  {
+    name: "Menu Signature",
+    price: "95€",
+    items: [
+      "Foie gras mi-cuit, chutney de figues",
+      "Velouté de homard",
+      "Filet de bœuf Rossini",
+      "Chariot de fromages",
+      "Dessert du chef",
+    ],
+    tag: "Populaire",
+  },
+  {
+    name: "Menu VIP Loge",
+    price: "145€",
+    items: [
+      "Cocktail de bienvenue",
+      "Plateau de fruits de mer",
+      "Tournedos sauce périgueux",
+      "Fromages affinés",
+      "Dessert & mignardises",
+      "Café & digestif",
+    ],
+    tag: "VIP",
   },
 ];
