@@ -1,9 +1,15 @@
+import TitlePage from "../components/pages/TitlePage";
+
 function Billetterie() {
   return (
-    <div>
-      <h1>Billetterie</h1>
-      <p>Contenu de la page de la billetterie.</p>
-    </div>
+    <main>
+      <TitlePage
+        imageSrc="https://parisfc.fr/wp-content/uploads/2025/09/Photo-1-RET.jpg"
+        imageAlt="Stade en feu"
+        title="Billetterie"
+        description="Choisissez votre événement et réservez vos places"
+      />
+    </main>
   );
 }
 

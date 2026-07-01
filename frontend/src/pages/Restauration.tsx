@@ -1,9 +1,15 @@
+import TitlePage from "../components/pages/TitlePage";
+
 function Restauration() {
   return (
-    <div>
-      <h1>Restauration</h1>
-      <p>Contenu de la page de restauration.</p>
-    </div>
+    <main>
+      <TitlePage
+        imageSrc="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=500&fit=crop&auto=format"
+        imageAlt="Stade en feu"
+        title="LE PANORAMA"
+        description="Restaurant gastronomique du stade — Vue sur la pelouse"
+      />
+    </main>
   );
 }
 
