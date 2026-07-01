@@ -1,4 +1,15 @@
-import { ShoppingBag, Star, Ticket, Utensils } from "lucide-react";
+import {
+  Award,
+  Briefcase,
+  Camera,
+  MapPin,
+  ShoppingBag,
+  Star,
+  Ticket,
+  Trophy,
+  Users,
+  Utensils,
+} from "lucide-react";
 import type { EventsCardProps } from "../components/card/EventsCard";
 import type { ServicesCardProps } from "../components/card/ServicesCard";
 import type { ActualitésCardProps } from "../components/card/ActualitésCard";
@@ -206,4 +217,63 @@ export const horaires = [
   { day: "Lun – Ven", hours: "9h – 18h" },
   { day: "Samedi", hours: "10h – 16h" },
   { day: "Jours d'événement", hours: "Selon programme" },
+];
+
+export const chiffresAbout = [
+  { val: "45 000", label: "Capacité", icon: Users },
+  { val: "170", label: "Emplois permanents", icon: Briefcase },
+  { val: "3", label: "Sites interconnectés", icon: MapPin },
+  { val: "7", label: "Services internes", icon: Award },
+];
+
+export const servicesAbout = [
+  {
+    service: "Administration",
+    effectif: "170 collaborateurs",
+    role: "Gestion administrative globale",
+  },
+  {
+    service: "Équipes",
+    effectif: "164 collaborateurs",
+    role: "Coordination des équipes opérationnelles",
+  },
+  {
+    service: "WiFi",
+    effectif: "100 utilisateurs",
+    role: "Réseaux sans fil internes",
+  },
+  { service: "Caméra IP", effectif: "80 caméras", role: "Vidéosurveillance" },
+  {
+    service: "VIP – Presse",
+    effectif: "80 collaborateurs",
+    role: "Accueil VIP et relations presse",
+  },
+  {
+    service: "Fournisseurs",
+    effectif: "44 collaborateurs",
+    role: "Relations fournisseurs & partenaires",
+  },
+  {
+    service: "Restaurant",
+    effectif: "14 collaborateurs",
+    role: "Restauration interne",
+  },
+];
+
+export const ValeursAbout = [
+  {
+    icon: Trophy,
+    title: "Excellence",
+    desc: "Nous visons le meilleur dans chaque aspect de l'expérience spectateur.",
+  },
+  {
+    icon: Users,
+    title: "Communauté",
+    desc: "Le stade est un lieu de rassemblement pour toute la région.",
+  },
+  {
+    icon: Camera,
+    title: "Innovation",
+    desc: "Nous investissons dans les technologies pour moderniser votre expérience.",
+  },
 ];
