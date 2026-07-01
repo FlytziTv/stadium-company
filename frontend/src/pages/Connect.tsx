@@ -64,7 +64,7 @@ function Connect() {
             </div>
 
             {error && (
-              <div className="flex items-start gap-2 bg-red-50 border border-red-200 rounded-lg p-3 mb-4 text-sm text-red-700">
+              <div className="flex items-start gap-2 bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-700">
                 <AlertCircle size={14} className="mt-0.5 shrink-0" />
                 {error}
               </div>
