@@ -64,7 +64,7 @@ export const events: EventsCardProps[] = [
     sold: 44200,
     price: 50,
     imageSrc:
-      "https://images.unsplash.com/photo-1431324155629-1a5a2abcd36e?w=600&h=350&fit=crop&auto=format",
+      "https://i.eurosport.com/2025/03/25/image-2d8180f1-dca4-4545-80fb-378b3db1f454-85-2560-1440.jpeg",
   },
   {
     title: "Festival Électro Summer",
