@@ -7,10 +7,13 @@ import Restauration from "./pages/Restauration";
 import Boutique from "./pages/Boutique";
 import About from "./pages/About";
 import Connect from "./pages/Connect";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/evenements" element={<Evenements />} />
