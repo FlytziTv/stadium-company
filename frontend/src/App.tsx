@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Evenements from "./pages/Evenements";
 import Billetterie from "./pages/Billetterie";
@@ -10,27 +10,38 @@ import Connect from "./pages/Connect";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
+const noFooterRoutes = ["/connect", "/admin"];
+
+function Layout() {
+  const location = useLocation();
+  const hideFooter = noFooterRoutes.includes(location.pathname);
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/evenements" element={<Evenements />} />
+          <Route path="/billetterie" element={<Billetterie />} />
+          <Route path="/restauration" element={<Restauration />} />
+          <Route path="/boutique" element={<Boutique />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/connect" element={<Connect />} />
+        </Routes>
+      </main>
+
+      {!hideFooter && <Footer />}
+    </div>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/evenements" element={<Evenements />} />
-            <Route path="/billetterie" element={<Billetterie />} />
-            <Route path="/restauration" element={<Restauration />} />
-            <Route path="/boutique" element={<Boutique />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/connect" element={<Connect />} />
-          </Routes>
-        </main>
-
-        <Footer />
-      </div>
+      <Layout />
     </BrowserRouter>
   );
 }

@@ -40,7 +40,7 @@ export default function Navbar() {
 
         <div className="flex justify-end">
           <NavLink
-            to="/login"
+            to="/connect"
             className="flex items-center gap-2 bg-accent text-background text-sm font-medium px-4 py-1.5 rounded-sm hover:opacity-90 transition-opacity duration-200"
           >
             <UserRound size={16} />
