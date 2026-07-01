@@ -125,12 +125,12 @@ function Home() {
               Réservez vos places avant qu'il ne soit trop tard.
             </p>
           </div>
-          <button
-            onClick={() => navigate("ticketing")}
+          <NavLink
+            to="/billetterie"
             className="bg-accent hover:bg-red-700 text-white px-8 py-2 rounded-sm font-semibold transition-colors text-md"
           >
             Réserver maintenant
-          </button>
+          </NavLink>
         </div>
       </section>
     </main>
