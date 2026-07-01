@@ -17,7 +17,7 @@ export default function TitlePage({
         className="absolute inset-0 w-full h-full object-cover opacity-40"
       />
       <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent" />
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-10 w-full">
+      <div className="relative z-10 max-w-350 mx-auto px-4 sm:px-6 pb-10 w-full">
         <h1
           className="text-5xl font-black text-white"
           style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
