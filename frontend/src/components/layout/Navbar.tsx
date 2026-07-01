@@ -14,7 +14,7 @@ const links = [
 export default function Navbar() {
   return (
     <header className="bg-foreground sticky top-0 z-50">
-      <nav className="max-w-350 mx-auto grid grid-cols-[200px_1fr_200px] items-center px-10 py-4">
+      <nav className="max-w-350 mx-auto grid grid-cols-[200px_1fr_200px] items-center px-5 py-4">
         <NavLink to="/" className="text-xl font-extrabold text-background">
           Stadium <span className="text-accent">Company</span>
         </NavLink>
