@@ -1,0 +1,19 @@
+{
+  "name": "sz-dev/stadium-company-backend",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "FlytziTv",
+      "email": "flytzitv@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6",
+    "firebase/php-jwt": "^7.1"
+  }
+}
