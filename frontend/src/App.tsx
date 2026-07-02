@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Evenements from "./pages/Evenements";
 import Billetterie from "./pages/Billetterie";
@@ -7,21 +7,15 @@ import Restauration from "./pages/Restauration";
 import Boutique from "./pages/Boutique";
 import About from "./pages/About";
 import Connect from "./pages/Connect";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+import PublicLayout from "./layouts/PublicLayout";
+import AdminLayout from "./layouts/AdminLayout";
+import AuthLayout from "./layouts/AuthLayout";
 
-const noFooterRoutes = ["/connect", "/admin"];
-
-function Layout() {
-  const location = useLocation();
-  const hideFooter = noFooterRoutes.includes(location.pathname);
-
+function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-
-      <main className="flex-1">
-        <Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/evenements" element={<Evenements />} />
           <Route path="/billetterie" element={<Billetterie />} />
@@ -29,19 +23,14 @@ function Layout() {
           <Route path="/boutique" element={<Boutique />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+        </Route>
+
+        <Route element={<AuthLayout />}>
           <Route path="/connect" element={<Connect />} />
-        </Routes>
-      </main>
+        </Route>
 
-      {!hideFooter && <Footer />}
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Layout />
+        <Route path="/admin" element={<AdminLayout />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }
